@@ -1,0 +1,21 @@
+div {
+    background-color: red;
+}
+
+body {
+    color: white;
+    background-color: greenyellow;
+}
+
+button {
+
+}
+
+button:hover {
+    background-color: blue;
+    transition: 0.1s;
+}
+
+input {
+    background-color: aqua;
+}
