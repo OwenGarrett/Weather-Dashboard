@@ -8,8 +8,9 @@ body {
 }
 
 button:hover {
-    background-color: blue;
+    background-color: lightgray;
     transition: 0.1s;
+    cursor: pointer;
 }
 
 input {
