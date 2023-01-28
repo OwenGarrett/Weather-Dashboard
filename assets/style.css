@@ -7,10 +7,6 @@ body {
     background-color: greenyellow;
 }
 
-button {
-
-}
-
 button:hover {
     background-color: blue;
     transition: 0.1s;
@@ -18,4 +14,8 @@ button:hover {
 
 input {
     background-color: aqua;
+}
+
+section {
+    background-color: purple;
 }

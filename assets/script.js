@@ -8,7 +8,7 @@ var searchInput = document.querySelector("#search-input");
 var fiveDayForecastContainer = document.querySelector("#js-five-day-forecast")
 
 
-// FUNCTIONS TO GET API WEATHER DATA
+// FUNCTIONS TO GET API WEATHER DATA 5 DAY FORECAST 
 
 function geoCodingFetch(query) {
   var apiURL =
