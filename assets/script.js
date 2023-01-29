@@ -43,7 +43,7 @@ function api5DaysFetch(lat, lon) {
     .then(function (data) {
       console.log(data);
       var listOfForecastItems=data.list
-      console.log(listOfForecastItems)
+      filterFiveDays(listOfForecastItems)
     });
 }
 
@@ -62,3 +62,23 @@ function renderForecastCard(title){
 fiveDayForecastContainer.appendChild(cardEl)
 }
 
+
+function filterFiveDays(arrayOfWeatherObjects) {
+  var startDateTime = dayjs().add(1, 'day').startOf('day').unix()
+  var endDateTime = dayjs().add(6, 'day').startOf('day').unix()
+  console.log(arrayOfWeatherObjects)
+  for (let index = 0; index < arrayOfWeatherObjects.length; index++) {
+    const weatherObject = arrayOfWeatherObjects[index];
+    if (weatherObject.dt > startDateTime && weatherObject.dt < endDateTime) {
+      
+      var timeHour = weatherObject.dt_txt.split(' ')[1]
+      if (timeHour === '12:00:00') {
+        console.log(weatherObject)
+        renderForecastCard(weatherObject.dt_txt)
+      }
+
+    }
+    
+  }
+
+}
