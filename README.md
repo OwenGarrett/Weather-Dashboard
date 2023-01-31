@@ -26,7 +26,8 @@ Website: https://sheogorath9.github.io/Weather-Dashboard/
 
 
 ______________________________________________________________________________________________
-Screenshot 
+ 
+<img src="./assets/Screenshot.png" alt="Deployed App" title="Deployed App">
 
 
 OG 👽☯️
